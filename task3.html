@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>task3</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style type="text/css">
+        body{
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        #main{
+            display: block;
+            margin: 0 auto;
+            padding: 0;
+            height: 750px;
+            width: 1440px;
+        }
+        /*分为三个div：上中下*/
+        .top{
+            width: 675px;
+            height: 48px;
+            background-color: #331409;
+        }
+        .middle{
+            width: 675px;
+            height: 100px;
+            background-color: #22292c;
+        }
+        .leftover{
+            width: 675px;
+            height:900px;
+            background-color: #68cdd5;
+        }
+        /*上最左div概述*/
+        .top_left{
+            float: left;
+            margin: 10px;
+            width: 250px;
+            height: 28px;
+        }
+        /*分述*/
+        .tleft1{
+            margin-left: 2px;
+            float: left;
+            width: 69px;
+            height: 25px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/top_left.png);
+        }
+        .tleft2{
+            margin-left: 12px;
+            float: left;
+            width: 108px;
+            height: 25px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/applidium.png);
+
+        }
+        .tleft3{
+            margin-left: 12px;
+            float: left;
+            width: 27px;
+            height: 22px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/wlan.png);
+
+        }
+        /*上中div概述及分述*/
+        .top_middle{
+            margin-left: 10px;
+            margin-top: 12px;
+            float: left;
+            width: 110px;
+            height: 22px;
+
+        }
+        .tmiddle1{
+            float: left;
+            width: 60px;
+            height: 22px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/time1127.png);
+        }
+        .tmiddle2{
+            float: left;
+            margin-left: 3px;
+            width: 40px;
+            height: 22px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/AM.png);
+        }
+        /*上右div概述及分述*/
+        .top_right{
+            float: left;
+            margin-left: 150px;
+            margin-top: 12px;
+            width: 125px;
+            height: 22px;
+        }
+        .tright1{
+            float: left;
+            margin-left: 0px;
+            width: 36px;
+            height: 22px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/100.png);
+
+        }
+        .tright2{
+            float: left;
+            margin-left: 8px;
+            width: 20px;
+            height: 22px;
+            background-image: url(../../mainimg/percent.png);
+
+        }
+        .tright3{
+            float: left;
+            margin-left: 7px;
+            width: 50px;
+            height: 22px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/power.png);
+        }
+        /*中间div，左部分概述及分述*/
+        .middle_left{
+            float: left;
+            margin: 10px;
+            width: 225px;
+            height: 75px;
+        }
+        .mleft1{
+            float: left;
+            margin-top: 18px;
+            margin-left: 10px;
+            width: 20px;
+            height: 36px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/symbol.png);
+
+        }
+        .mleft2{
+            float: left;
+            margin-top: 18px;
+            margin-left: 12px;
+            width: 53px;
+            height: 36px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/return.png);
+        }
+        /*中间部分*/
+        .middle_center{
+            float: left;
+            margin-top: 30px;
+            margin-left: 34px;
+            width: 103px;
+            height: 35px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/mirror.png);
+        }
+        /*中间右部分*/
+        .middle_right{
+            float: left;
+            margin-top: 30px;
+            margin-left: 238px;
+            width: 36px;
+            height: 35px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/threepoint.png);
+        }
+        /*剩余部分概述，分上中下三个div*/
+        /*剩余部分上div*/
+        .leftover_top{
+            position: relative;
+            width: 675px;
+            height: 225px;
+        }
+        .ltop{
+            float: left;
+            margin-left: 27px;
+            margin-top: 27px;
+            width: 54px;
+            height: 54px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/return%20blue.png);
+        }
+        .lbot{
+            float: left;
+            margin-top: 100px;
+            width: 675px;
+            height: 75px;
+        }
+        .lbot1{
+            float: left;
+            margin-left: 200px;
+            margin-bottom: 18px;
+            margin-right: 18px;
+            width: 66px;
+            height: 69px;
+            background-repeat:no-repeat;
+            background-image: url("../../mainimg/mark.png");
+        }
+        .lbot2{
+            float: left;
+            width: 116px;
+            height: 75px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/address.png);
+
+        }
+        /*剩余部分中*/
+        .leftover_center{
+            text-align: left;
+            margin-left: 140px;
+            margin-top: 100px;
+            width: 375px;
+            height: 250px;
+            font-size:24px;
+            color:#ffffff;
+            font-family:'Heiti SC';
+            font-weight: 600;
+        }
+        /*剩余部分下*/
+        .leftover_bottom{
+            float: left;
+            margin-top: 0px;
+            width: 675px;
+            height: 300px;
+        }
+        /*下，左部分，再分上下*/
+        .lleft{
+            float: left;
+            margin-left: 72px;
+            width: 300px;
+            height: 300px;
+
+        }
+        .lleftt{
+            float: left;
+            margin-left: 100px;
+            margin-top: 20px;
+            width: 84px;
+            height: 84px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/link1.png);
+        }
+        .lleftb{
+            float: left;
+            margin-left: 84px;
+            margin-top: 10px;
+            width: 120px;
+            height: 21px;
+            background-repeat:no-repeat;
+            background-image: url(../../mainimg/link1%20number.png);
+        }
+        /*下，右部分，再分上下*/
+        .lright{
+            float: left;
+            margin-left: 10px;
+            width: 289px;
+            height: 300px;
+        }
+        .lrightt{
+            position: relative;
+            margin-left: 36px;
+            margin-top: 15px;
+            width: 84px;
+            height: 84px;
+            background-repeat:no-repeat;
+            background-image: url("../../mainimg/link2.png");
+        }
+        .lrightb{
+            position: relative;
+            margin-left: 27px;
+            margin-top: 18px;
+            width: 103px;
+            height: 25px;
+            background-repeat:no-repeat;
+            background-image: url("../../mainimg/link2%20number.png");
+        }
+    </style>
+</head>
+<body>
+
+<div id="main">
+    <div class="top">
+        <div class="top_left">
+            <div class="tleft1"></div>
+            <div class="tleft2"></div>
+            <div class="tleft3"></div>
+        </div>
+        <div class="top_middle">
+            <div class="tmiddle1"></div>
+            <div class="tmiddle2"></div>
+        </div>
+        <div class="top_right">
+            <div class="tright1"></div>
+            <div class="tright2"></div>
+            <div class="tright3"></div>
+        </div>
+    </div>
+    <div class="middle">
+        <div class="middle_left">
+            <div class="mleft1"></div>
+            <div class="mleft2"></div>
+        </div>
+        <div class="middle_center"></div>
+        <div class="middle_right"></div>
+    </div>
+    <div class="leftover">
+        <div class="leftover_top">
+            <div class="ltop"></div>
+            <div class="lbot">
+                <div class="lbot1"></div>
+                <div class="lbot2"></div>
+            </div>
+        </div>
+        <div class="leftover_center">葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。</div>
+        <div class="leftover_bottom">
+            <div class="lleft">
+                <div class="lleftt"></div>
+                <div class="lleftb"></div>
+            </div>
+            <div class="lright">
+                <div class="lrightt"></div>
+                <div class="lrightb"></div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
